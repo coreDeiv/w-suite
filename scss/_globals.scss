@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#wrap-wrap {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Noto Sans', sans-serif, serif;
+  font-size: 18px;
+  font-weight: normal;
+  word-spacing: 1.5px;
+  scroll-behavior: smooth;
+}
+
+a {
+  font-size: 1rem;
+  font-style: normal;
+  text-decoration: none;
+  transition: ease .5s all !important;
+  color: $second-color;
+  &:hover,
+  &.active {
+    color: $theme-color;
+  }
+  &:focus {
+    color: rgba($theme-color, .7);
+  }
+}
+
+p {
+  color: $second-color;
+  font-size: .9rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $black-color;
+  font-weight: normal;
+  letter-spacing: .5px;
+}

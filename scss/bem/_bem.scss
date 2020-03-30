@@ -1,0 +1,67 @@
+.container,
+.container-fluid,
+.container-stretch {
+  width: auto;
+  padding: 0 2%;
+}
+
+.d {
+  &-flex {
+    display: flex;
+  }
+  &-none {
+    display: none;
+  }
+}
+
+img {
+  width: 100%;
+  &.img-fluid {
+    max-width: 100%;
+  }
+}
+
+section {
+  width: 98%;
+  height: auto;
+  padding: 0 20px;
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+}
+
+.w {
+  &-25 {
+    width: 25%;
+  }
+  &-50 {
+    width: 50%;
+  }
+  &-75 {
+    width: 75%;
+  }
+  &-100 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 85%;
+    margin: auto;
+    &-stretch {
+      width: 65%;
+      margin: auto;
+    }
+    &-fluid {
+      width: 100%;
+      margin: auto;
+    }
+  }
+  .row {
+    width: 100%;
+    padding-left: 2.7rem;
+    padding-right: 2.7rem;
+    display: flex;
+  }
+}

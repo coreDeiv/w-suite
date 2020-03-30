@@ -1,0 +1,20 @@
+
+// Gloabales
+
+@import "_colors.scss";
+@import "_variables.scss";
+@import "_globals.scss";
+
+// Bem
+
+@import "bem/_bem.scss";
+@import "bem/_buttons.scss";
+
+// Main Content
+
+@import "content/_header.scss";
+@import "content/_main.scss";
+@import "content/_footer.scss";
+@import "content/_cards.scss";
+@import "content/_form-contact.scss";
+@import "content/_carousel.scss";

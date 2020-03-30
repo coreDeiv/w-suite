@@ -1,0 +1,84 @@
+main {
+  #form-contact-row {
+    text-align: center;
+    background: $white-color;
+    .row {
+      justify-content: flex-start;
+      padding: 2.5rem 0;
+      align-items: center;
+      .form-box {
+        width: 60%;
+        margin: 0;
+        text-align: left;
+        @media (max-width: 767px) {
+          width: 100%;
+          margin: auto;
+        }
+        .form-content {
+          @media (max-width: 767px) {
+            text-align: center;
+          }
+          .form-title {
+            h2 {
+              font-size: 2rem;
+              letter-spacing: 10px;
+              border-right: 10px solid $theme-color;
+              line-height: 1.8rem;
+              display: inline-block;
+              padding-right: 2%;
+            }
+          }
+          form {
+            .form-group {
+              width: 70%;
+              margin: 2% 0;
+              @media (max-width: 767px) {
+                text-align: center;
+                width: 95%;
+              }
+              input, textarea {
+                width: 100%;
+                padding: 15px;
+                border: none;
+                border-bottom: 1px solid $second-color;
+                margin: 20px 0;
+                font-family: 'Noto Sans', sans-serif, serif;
+                font-size: 1rem;
+                letter-spacing: 2px;
+                outline: none;
+                transition: ease .5s;
+                &.error {
+                  border: 1px solid $theme-color;
+                  color: $theme-color;
+                }
+                &:focus {
+                  border-bottom: 1px solid $black-color;
+                }
+              }
+              textarea {
+                min-height: 150px;
+                max-height: 250px;
+                min-width: 100%;
+                max-width: 100%;
+              }
+              &.btn-group {
+                a {
+                  margin-left: 0;
+                }
+              }
+            }
+          }
+        }
+        & ~ div {
+          width: 40%;
+          font-size: 1.5rem;
+          margin: 3% 0;
+          @media (max-width: 767px) {
+            width: 95%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

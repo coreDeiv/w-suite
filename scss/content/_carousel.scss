@@ -1,0 +1,58 @@
+#main-banner {
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  .carousel-cell {
+    width: 100%;
+    height: 90vh;      
+    margin: 0;
+    padding: 0;
+    &:nth-child(1) {
+      background: $theme-color;
+    }
+    &:nth-child(2) {
+      background: $third-color;
+    }
+    .row {
+      height: 100%;
+      align-items: center;
+      .box {
+        width: 100%;
+        display: flex;
+        border: 15px solid rgba(255,255,255,.5);
+        padding: 5%;
+        @media (max-width: 767px) {
+          display: block;
+        }
+        .box-carousel {
+          width: 50%;
+          padding: 10% 0;
+          @media (max-width: 767px) {
+            width: 100%;
+            padding: 20% 0;
+          }
+          h1 {
+            font-size: 3rem;
+            color: $white-color;
+          }
+          p {
+            font-size: 2rem;
+            color: $white-color;
+          }
+          .btn-group {
+            a {
+              margin-left: 0;
+            }
+          }
+          & ~ div {
+            text-align: right;
+            svg {
+              color: $white-color;
+              font-size: 5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

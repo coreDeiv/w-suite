@@ -1,0 +1,18 @@
+main {
+  // padding-top: 10%;
+  background: $main-color;
+  .container {
+    .row {
+      padding: 10rem 0;
+      @media (max-width: 767px) {
+        display: block;
+        padding: 2rem 0;
+      }
+    }
+  }
+  #free_trial {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 3%;
+  }
+}
